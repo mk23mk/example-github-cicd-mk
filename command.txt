@@ -1,0 +1,9 @@
+Chapter02
+
+mkdir -p .github/workflows
+
+touch .github/workflows/hello.yml
+
+git add .github/workflows/hello.yml
+
+git commit -m "Add hello.yml"
