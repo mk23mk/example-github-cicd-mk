@@ -1,0 +1,12 @@
+name: Variables
+on: push
+jobs:
+    print:
+        runs-on: ubuntu-latest
+        env:
+            USERNAME1: ${{ vars.USERNAME }}
+            USERNAME2: ${{ vars.USERNAME2 }}
+        steps:
+            - run: echo "USERNAME1 = ${USERNAME1}"
+            - run: echo "USERNAME2 = ${USERNAME2}"
+            
