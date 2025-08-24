@@ -1,3 +1,5 @@
+https://github.com/tmknom/example-github-cicd
+
 Chapter02
 
 mkdir -p .github/workflows
@@ -7,3 +9,12 @@ touch .github/workflows/hello.yml
 git add .github/workflows/hello.yml
 
 git commit -m "Add hello.yml"
+
+P.25
+gh workflow run manual.yml -f greeting=goodbye
+
+P.30
+https://github.com/actions/runner-images
+
+P.31
+https://github.com/marketplace
