@@ -1,7 +1,7 @@
 name: Change shell
 defaults:
   run:
-    shell: pwsh
+    shell: pwsh 
 on: push
 jobs:
   print:
