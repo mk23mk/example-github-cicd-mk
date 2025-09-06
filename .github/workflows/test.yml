@@ -1,7 +1,9 @@
-name: Test2
+name: Test3
 on:
-  pull_request:                        # プルリクエストが作成されたら起動
-    paths: ['go/**/*.go']              # ただしGoのファイル変更時のみ
+  #pull_request:                        # プルリクエストが作成されたら起動
+  #  paths: ['go/**/*.go']              # ただしGoのファイル変更時のみ
+  issues:
+    types: [opened, edited]
 jobs:
   test:
     runs-on: ubuntu-latest
