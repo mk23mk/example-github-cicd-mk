@@ -16,6 +16,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-          cache: gradle
+          #cache: gradle
       - run: javac java/*.java # ステップ3: コンパイル
       - run: java java/*.java  # ステップ4: 実行
