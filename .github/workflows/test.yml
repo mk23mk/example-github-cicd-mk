@@ -3,7 +3,7 @@ on:
   #pull_request:                        # プルリクエストが作成されたら起動
   #  paths: ['go/**/*.go']              # ただしGoのファイル変更時のみ
   issues:
-    types: [opened, edited]
+    #types: [opened, edited]
 jobs:
   test:
     runs-on: ubuntu-latest
