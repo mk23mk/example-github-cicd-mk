@@ -3,5 +3,6 @@ on: push    # イベント（プッシュ時に起動）
 jobs:       # ジョブの定義
   run:    # ジョブID
     runs-on: ubuntu-latest        # ランナー（Ubuntuで実行）
-      steps:
-        - run: echo "YAML Syntax Error" #インデントが2文字ズレている
+    steps:
+        #- run: echo "YAML Syntax Error" #インデントが2文字ズレている
+    - run: echo "YAML Syntax Error" #インデントが2文字ズレている
