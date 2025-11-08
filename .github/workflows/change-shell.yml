@@ -1,11 +1,14 @@
 name: Change shell
+defaults:
+  run:
+    shell: pwsh 
 on: push
 jobs:
   print:
     runs-on: ubuntu-latest
     steps:
-      - shell: bash          # シェルにBashを指定
-        run: echo "${SHELL}"
+      # - shell: bash          # シェルにBashを指定
+      - run: echo "${SHELL}"
       - shell: python        # シェルにPythonを指定
         run: |
           import os
