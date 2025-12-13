@@ -18,3 +18,12 @@ https://github.com/actions/runner-images
 
 P.31
 https://github.com/marketplace
+
+P.200
+export GHCR_USER=$(gh config get -h github.com user)
+docker build -t ghcr.io/${GHCR_USER}/auto-link:latest --label "org.opencontainers.image.source=https://github.com/${GHCR_USER}/example-github-cicd-mk" .
+
+docker push ghcr.io/${GHCR_USER}/auto-link:latest
+
+
+
